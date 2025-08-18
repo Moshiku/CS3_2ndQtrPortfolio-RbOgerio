@@ -1,8 +1,11 @@
 <script>
-  var age = 14;
-  var maxAge = 240;
-  var numPerDay=5;
+  var age = prompt("Please state age");
+  var sure = confirm("Are you sure?")
+  var maxAge =prompt("please enter highest possible age");
+  var confirmation = confirm("Are you sure?")
+  var numPerDay= prompt ("How many times do you eat Fruit Snacks");
+  var Bigback = confirm("Are you sure? Wow you a big back!")
   var totalRequired = (numPerDay * 365) * (maxAge - age);
-  var Result="You will need" + " " + totalRequired + " " + "Fruitsnacks" + " " + "to last you until the ripe old age of" + " " + maxAge;
+  var Result="You will need " + totalRequired +  " Fruitsnacks " + " to last you until the ripe old age of " + maxAge;
   document.write(Result);
 </script>
