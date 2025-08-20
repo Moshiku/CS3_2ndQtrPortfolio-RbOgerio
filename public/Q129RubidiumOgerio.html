@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2 style="font-weight:bold;"> Q1 2nd Graded Exercise submitted by Nathaniel Zenon A. Ogerio of 9-Rubidium</h2>
+     <table>
+        <tr>
+            <td style="font-weight:bold;">Meal price:<input id="mp" type:number></td>
+        </tr>
+        <tr>
+            <td style="font-weight:bold;">Tip:<input id="tip" type:number></td>
+        </tr>
+        <tr>
+            <td style="font-weight:bold;">Service charge:<input id="Sc" type:number></td>
+        </tr>
+     </table>
+    <button onclick="totalMeal()">Accept Input</button>
+    <pre><p style="font-weight: bold;">Total meal:</p><p id="total_cost"></p></pre>
+   
+    <script>
+        function totalMeal() {
+            var meal_price = parseFloat(document.getElementById("mp").value);
+            var tip = parseFloat(document.getElementById("tip").value);
+            var service_charge = parseFloat(document.getElementById("Sc").value);
+            
+            var Total_cost = meal_price + tip + (service_charge / 100 * meal_price);
+            
+            document.getElementById("total_cost").innerHTML = Total_cost.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
